@@ -4,9 +4,9 @@ require 'pry-byebug'
 
 def bubble_sort(numbers)
   until sorted?(numbers)
-    numbers.each_index do |index|
-      if !numbers[index + 1].nil? && (numbers[index + 1] < numbers[index])
-        numbers[index], numbers[index + 1] = numbers[index + 1], numbers[index]
+    numbers.each_index do |idx|
+      if !numbers[idx + 1].nil? && (numbers[idx + 1] < numbers[idx])
+        numbers[idx], numbers[idx + 1] = numbers[idx + 1], numbers[idx]
       end
     end
   end
